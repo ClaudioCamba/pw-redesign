@@ -1,24 +1,34 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import banner1 from '../assets/banner1.jpg';
+import banner2 from '../assets/banner2.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
 
 export default () => {
   return (
-    <section>
+    <section className='pfw-carousel'>
         <Swiper
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide className='pfw-carousel-slide'>
+            <img src={banner1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide className='pfw-carousel-slide'>
+            <img src={banner2} alt="" />
+        </SwiperSlide>
         ...
         </Swiper>
     </section>
   );
 };
+
+/*
+TODO:
+- add alt text to images
+- add copy to slides
+*/ 
