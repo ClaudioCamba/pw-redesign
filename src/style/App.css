@@ -62,15 +62,20 @@ img {
   height: auto;
 }
 
-main, footer {
-  max-width: 1200px;
-  margin: 0 auto;
+main, footer, header {
+  width: 100%;
 }
+
 main h2, footer h2 {
   text-transform: uppercase;
 }
 main section, footer section {
+  margin: 0 auto;
+}
+
+main section {
   margin-bottom: 80px;
+  max-width: 1200px;
 }
 
 .title-black {
@@ -212,4 +217,12 @@ main section, footer section {
   text-decoration: underline;
   background: rgb(243, 21, 80);
   background: linear-gradient(0deg, rgb(243, 21, 80) 40%, rgba(243, 21, 80, 0) 100%);
+}
+
+footer {
+  background-color: #000;
+  border-top: 3px solid #F31550;
+}
+footer section {
+  max-width: 1440px;
 }/*# sourceMappingURL=App.css.map */

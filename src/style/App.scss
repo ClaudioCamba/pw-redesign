@@ -63,15 +63,25 @@
     height: auto;
   }
 
+  main, footer, header {
+    width:100%;
+  }
+
   main, footer {
-    max-width: 1200px;
-    margin: 0 auto;
 
     h2 {
         text-transform: uppercase;
     }
+
     section {
+      margin: 0 auto;
+    }
+  }
+
+  main {
+      section {
         margin-bottom: 80px;
+        max-width: 1200px;
     }
   }
 
@@ -245,3 +255,10 @@
     }
 }
 
+footer {
+  background-color: $black;
+  border-top: 3px solid $brand-pink;
+  section {
+    max-width: 1440px;
+  }
+}

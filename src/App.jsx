@@ -9,6 +9,7 @@ import Whoweare from './components/Whoweare.jsx';
 import Ouraims from './components/Ouraims.jsx';
 import Ournetwork from './components/Ournetwork.jsx';
 import Chartbanner from './components/Pfwchart.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
         <Chartbanner />
       </main>
       <footer>
-        <p>Footer</p>
+        <Footer />
       </footer>
     </>
   )
