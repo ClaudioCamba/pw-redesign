@@ -16,12 +16,11 @@ export default () => {
         onSwiper={(swiper) => console.log(swiper)}
         >
         <SwiperSlide className='pfw-carousel-slide'>
-            <img src={banner1} alt="" />
+            <img src={banner1} alt="placeholder" />
         </SwiperSlide>
         <SwiperSlide className='pfw-carousel-slide'>
-            <img src={banner2} alt="" />
+            <img src={banner2} alt="placeholder" />
         </SwiperSlide>
-        ...
         </Swiper>
     </section>
   );

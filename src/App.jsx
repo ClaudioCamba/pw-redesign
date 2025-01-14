@@ -6,6 +6,8 @@ import './style/App.css';
 import Navigation from './components/navigation.jsx';
 import Carousel from './components/Carousel.jsx';
 import Whoweare from './components/Whoweare.jsx';
+import Ouraims from './components/Ouraims.jsx';
+import Ournetwork from './components/Ournetwork.jsx';
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <main>
         <Carousel />
         <Whoweare />
+        <Ouraims />
+        <Ournetwork />
       </main>
       <footer>
         <p>Footer</p>
