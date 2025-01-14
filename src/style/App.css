@@ -62,6 +62,10 @@ img {
   height: auto;
 }
 
+header {
+  padding-top: 83px;
+}
+
 main, footer, header {
   width: 100%;
 }
@@ -126,6 +130,22 @@ main section {
   font-weight: bold;
   font-size: 12px;
   margin-bottom: 0;
+}
+
+.pfw-navigation {
+  padding: 0;
+  border-bottom: 3px solid #F31550;
+  background-color: #fff !important;
+}
+.pfw-navigation > .container-fluid {
+  padding-left: 0;
+}
+.pfw-navigation > .container-fluid .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+.pfw-navigation > .container-fluid .pfw-inner-nav {
+  padding-right: 10px;
 }
 
 .pfw-intro {

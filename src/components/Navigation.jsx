@@ -1,28 +1,28 @@
+import companyLogo from '../assets/nav-logo.png';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import companyLogo from '../assets/pfw-logo.png';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function Navigation() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">
-            <img
-              src={companyLogo}
+    <Navbar expand="lg" className="pfw-navigation" fixed="top" bg="light" data-bs-theme="light">
+      <Container fluid>
+        <Navbar.Brand href="#">            
+          <img src={companyLogo}
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
-            />
-          </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="ms-auto my-2 my-lg-0 pfw-inner-nav"
+            style={{ maxHeight: '80px' }}
+            navbarScroll
+          >
+                        <Nav.Link href="#home">Home</Nav.Link>
             <NavDropdown title="About us" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">About us</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">10 Years of powerful women</NavDropdown.Item>
@@ -71,20 +71,15 @@ function Navigation() {
               <NavDropdown.Item href="#action/3.4">Videos and Podcasts</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-            <Form inline>
-                <Row>
-                <Col xs="auto">
-                    <Form.Control
-                    type="text"
-                    placeholder="Search"
-                    className=" mr-sm-2"
-                    />
-                </Col>
-                <Col xs="auto">
-                    <Button type="submit">Submit</Button>
-                </Col>
-                </Row>
-            </Form>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-danger">Search</Button>
+          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
