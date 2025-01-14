@@ -8,6 +8,7 @@ import Carousel from './components/Carousel.jsx';
 import Whoweare from './components/Whoweare.jsx';
 import Ouraims from './components/Ouraims.jsx';
 import Ournetwork from './components/Ournetwork.jsx';
+import Chartbanner from './components/Pfwchart.jsx';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Whoweare />
         <Ouraims />
         <Ournetwork />
+        <Chartbanner />
       </main>
       <footer>
         <p>Footer</p>

@@ -70,7 +70,7 @@ main h2, footer h2 {
   text-transform: uppercase;
 }
 main section, footer section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .title-black {
@@ -89,7 +89,7 @@ main section, footer section {
 .small-card-desc {
   font-size: 12px;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .pfw-card-title-bg {
@@ -108,14 +108,29 @@ main section, footer section {
   margin-bottom: 0;
 }
 
+.pfw-card-title-sm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 30px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
 .pfw-intro {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 0;
+  align-items: center;
 }
 .pfw-intro > .pfw-text {
-  max-width: 670px;
+  max-width: 680px;
 }
 .pfw-intro .pfw-img {
   max-width: 430px;
@@ -166,26 +181,35 @@ main section, footer section {
 }
 .pfw-ournetwork .pfw-network-cards .pfw-card {
   width: 100%;
-  max-width: 385px;
+  max-width: 285px;
   position: relative;
   display: flex;
   align-items: end;
   border-radius: 4px;
   overflow: hidden;
+  background-color: #000;
 }
 .pfw-ournetwork .pfw-network-cards .pfw-card .pfw-card-text {
   position: absolute;
   padding: 10px;
-  color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column-reverse;
-}
-.pfw-ournetwork .pfw-network-cards .pfw-card:hover .pfw-card-title-bg {
+  width: 100%;
   background-color: #000;
-  color: #fff;
-  text-decoration: underline;
-  transition: background-color 0.1s linear;
+  padding-top: 30%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
 }
-.pfw-ournetwork .pfw-network-cards .pfw-card:hover .small-card-desc {
+.pfw-ournetwork .pfw-network-cards .pfw-card .pfw-card-text h3 {
+  background-color: #fff;
+}
+.pfw-ournetwork .pfw-network-cards .pfw-card:hover {
+  background-color: #F31550;
+}
+.pfw-ournetwork .pfw-network-cards .pfw-card:hover .pfw-card-text {
+  background-color: #F31550;
   text-decoration: underline;
+  background: rgb(243, 21, 80);
+  background: linear-gradient(0deg, rgb(243, 21, 80) 40%, rgba(243, 21, 80, 0) 100%);
 }/*# sourceMappingURL=App.css.map */
